@@ -1,0 +1,19 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Monday",
+      "content": "Do groceries"
+    },
+    {
+      "id": 2,
+      "title": "Tuesday",
+      "content": "Water plants"
+    },
+    {
+      "id": 3,
+      "title": "Wednesday",
+      "content": "Clean the kitchen"
+    }
+  ]
+}
