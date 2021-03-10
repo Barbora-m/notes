@@ -1,5 +1,5 @@
 import { Container } from "reactstrap";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
 import { AddNote, NoteDetail, Notes } from "./pages";
@@ -12,6 +12,7 @@ export const App = () => {
           <Route component={AddNote} path="/notes/add" />
           <Route component={NoteDetail} path="/notes/:id" />
           <Route component={Notes} path="/notes" />
+          <Redirect to="/notes" />
         </Switch>
       </BrowserRouter>
     </AppContainer>
