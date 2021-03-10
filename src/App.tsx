@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "reactstrap";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import styled from "styled-components";
 
-function App() {
+import { AddNote, NoteDetail, Notes } from "./pages";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <BrowserRouter>
+        <Switch>
+          <Route component={AddNote} path="/notes/add" />
+          <Route component={NoteDetail} path="/notes/:id" />
+          <Route component={Notes} path="/notes" />
+        </Switch>
+      </BrowserRouter>
+    </AppContainer>
   );
-}
+};
 
-export default App;
+const AppContainer = styled(Container)`
+  background-color: palegoldenrod;
+  border-radius: 5px;
+  margin-top: 50px;
+  max-width: 400px;
+`;

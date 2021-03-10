@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNote 1`] = `
+<div
+  className="card-body"
+>
+  <input
+    className="form-control"
+    onChange={[Function]}
+    placeholder="Please enter your note here..."
+    type="text"
+    value=""
+  />
+  <div
+    className="row"
+  >
+    <div
+      className="sc-bdfBwQ bgajQq col"
+    >
+      <button
+        aria-label={null}
+        className="sc-gsTCUz ca-dqFr btn btn-secondary btn-sm"
+        onClick={[Function]}
+        type="button"
+      >
+        Back
+      </button>
+      <button
+        aria-label={null}
+        className="btn btn-success btn-sm disabled"
+        disabled={true}
+        onClick={[Function]}
+        type="submit"
+      >
+        Add note
+      </button>
+    </div>
+  </div>
+</div>
+`;
